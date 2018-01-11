@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="malavan.factaboutnumbers.factaboutnumber.FactActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp30"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/fact_about_numbers"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/lazy_click_random"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_number"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/advent_pro_medium"
+        android:padding="5dp"
+        android:text="@string/random"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        tools:ignore="ButtonStyle" />
+
+
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/it_may_be"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_result"
+        android:layout_marginStart="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp15"
+        android:checkedButton="@+id/radioButton_trivial">
+
+        <RadioButton
+            android:id="@+id/radioButton_trivial"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/trivial"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/math"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/date"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/year"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button32"
+        android:layout_alignStart="@+id/button_random"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/advent_pro_medium"
+        android:hint="@string/or_a_custom_one"
+
+        android:inputType="number"
+        android:lines="1"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="@string/search"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

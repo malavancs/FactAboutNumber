@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fact about numbers</string>
+    <string name="fact_about_numbers">Fact about numbers</string>
+    <string name="search">Search</string>
+    <string name="number">Number</string>
+    <string name="year">Year</string>
+    <string name="date">Date</string>
+    <string name="math">Math</string>
+    <string name="trivial">Trivial</string>
+    <string name="it_may_be">Search By</string>
+    <string name="random">Random</string>
+    <string name="input">Input</string>
+    <string name="lazy_click_random">Lazy … Click random</string>
+    <string name="or_a_custom_one">Or a custom one ?</string>
+</resources>
